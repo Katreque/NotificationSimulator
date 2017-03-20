@@ -1,0 +1,55 @@
+.container1{
+  padding-top: 40px;
+}
+
+.lol{
+  padding-left: 15px;
+}
+
+.notcontainer{
+  position: fixed;
+  margin-top: 45%;
+  right: 0px;
+}
+
+.insiderenv{
+  box-shadow: 5px 5px 2px grey;
+  border-top-left-radius: 2em;
+  padding: 5px;
+  background-color: #546E7A;
+  animation: deslizaenv 1.7s 0.5s, deslizaenvout 1.4s 4s;
+}
+
+.insideraut{
+  box-shadow: 5px 5px 2px grey;
+  border-top-left-radius: 2em;
+  padding: 5px;
+  background-color: #43A047;
+  animation: deslizaaut 2s forwards;
+  animation-delay: 0.5s;
+}
+
+.insiderrej{
+  box-shadow: 5px 5px 2px grey;
+  border-top-left-radius: 2em;
+  padding: 5px;
+  background-color: #E53935;
+  animation: deslizarej 2s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes deslizaenv {
+  to {margin-left: -400px;}
+}
+
+@keyframes deslizaenvout {
+  to {margin-left: 0px;}
+}
+
+@keyframes deslizaaut {
+  to {margin-left: -400px;}
+}
+
+@keyframes deslizarej {
+  to {margin-left: -400px;}
+}

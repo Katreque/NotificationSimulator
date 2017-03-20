@@ -1,0 +1,16 @@
+{
+  "name": "notificationsimulator",
+  "version": "0.0.1",
+  "description": "O seu simulador de notificações de cada dia",
+  "main": "main.js",
+  "scripts": {
+    "start": "aliv",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Katreque",
+  "license": "MIT",
+  "devDependencies": {
+    "aliv": "^1.7.1",
+    "bower": "^1.8.0"
+  }
+}

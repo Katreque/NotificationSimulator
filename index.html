@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <base href="/">
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./bower_components/alt-carregamento-info/alt-carregando-info.css"/>
+    <link rel="stylesheet" href="./css.css"/>
+    <title>Notification Simulator 2k17</title>
+  </head>
+  <body>
+    <main>
+      <div ng-view></div>
+      <div ng-controller="mainController as ctrl">
+        <div class="container col-sm-5 col-sm-offset-4">
+          <h2>Choose your destiny:</h2>
+          <button type="button" class="btn btn-secondary" ng-click="ctrl.enviar()">Enviar nota</button>
+          <button type="button" class="btn btn-success" ng-click="ctrl.autorizar()">Nota Autorizada</button>
+          <button type="button" class="btn btn-danger" ng-click="ctrl.rejeitar()">Nota Rejeitada</button>
+          <button type="button" class="btn btn-primary" ng-click="ctrl.load()">Load</button>
+        </div>
+        <div Alt-Carregando-Info></div>
+        <div class="notcontainer">
+          <div ng-show="(ctrl.flag === 0)">
+            <div class="insiderenv">
+              <i class="fa fa-circle-o-notch fa-5x fa-spin" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div ng-show="(ctrl.flag === 1)">
+            <div class="insideraut">
+              <i class="fa fa-check fa-5x" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div ng-show="(ctrl.flag === 2)">
+            <div class="insiderrej">
+              <i class="fa fa-close fa-5x" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <div class="container1 col-sm-5">
+            <label class="lol">Aqui estará seu destino!</label>
+            <div class="col-sm-12">
+              <button id="baitclickbois" class="col-sm-12 btn btn-primary" ng-click="ctrl.bois()">Clique aqui bois!</button>
+              <div class="container1">
+                <pre id="pre" ng-bind="ctrl.baitbois.detail.message"></pre>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="./bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./bower_components/alt-carregamento-info/alt-carregando-info.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./core_comunicacao_extensao.js"></script>
+  </body>
+</html>
