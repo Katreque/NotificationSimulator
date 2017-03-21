@@ -8,7 +8,7 @@
       function($rootScope, $window){
         class kooponCoreComunicacaoExtensaoService{
           envioExtensao(obj){
-            var k = new CustomEvent('PageParaExtensao', obj);
+            var k = new $window.CustomEvent('PageParaExtensao', obj);
             $window.dispatchEvent(k);
           }
 
