@@ -25,7 +25,7 @@
         })
 
         this.bois = function(){
-          document.getElementById('pre').textContent = 'Eu sou sei pai! FON!';
+          document.getElementById('pre').textContent = 'Você é o Pele?';
         }
 
         this.enviar = function(){
