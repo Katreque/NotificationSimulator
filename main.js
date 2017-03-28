@@ -15,7 +15,7 @@
 
         this.baitbois = {
           detail:{
-            message:'Eu sou sei pai! FON!'
+            message:'Você é o Pele?'
           }
         }
 
