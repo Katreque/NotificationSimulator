@@ -15,7 +15,7 @@
 
         this.baitbois = {
           detail:{
-            message:'Você é o Pele?'
+            message: 'Você é o Pele?'
           }
         }
 
